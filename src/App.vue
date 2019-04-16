@@ -14,7 +14,9 @@
         <router-link to="/pet">Pet</router-link>
       </a>
     </div>
-    <router-view/>
+    <b-container>
+      <router-view/>
+    </b-container>
   </div>
 </template>
 
