@@ -9,9 +9,6 @@
       </a> |
       <a>
         <router-link to="/dogs">Dogs</router-link>
-      </a> |
-      <a>
-        <router-link to="/pet">Pet</router-link>
       </a>
     </div>
     <b-container>
