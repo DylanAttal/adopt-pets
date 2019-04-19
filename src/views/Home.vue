@@ -2,6 +2,8 @@
   <div class="home">
     <h1>Adopt a new best friend!</h1>
     <p>Number of animals ready to join a family: {{ animalsCount }}</p>
+    <p>Number of cats ready to join a family: {{ getAllCats.length }}</p>
+    <p>Number of dogs ready to join a family: {{ getAllDogs.length }}</p>
     <button @click="togglePetForm" class="btn btn-primary">Add New Pet</button>
     <b-form @submit.prevent="handleSubmit" v-if="showPetForm">
       <b-form-group id="input-group-2" label="Pet's Name:" label-for="input-2">
@@ -50,7 +52,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["animalsCount"])
+    ...mapGetters(["animalsCount", "getAllCats", "getAllDogs"])
   },
   methods: {
     ...mapActions(["addPet"]),
